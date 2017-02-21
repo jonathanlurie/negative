@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title></title>
+  <script src="js/jquery-2.1.0.min.js"></script>
+
+  <script src="js/swipebox/js/jquery.swipebox.min.js"></script>
+
+  <link rel="stylesheet" href="js/justifiedGallery/justifiedGallery.css" />
+  <link rel="stylesheet" href="js/swipebox/css/swipebox.css">
+  <script src="js/justifiedGallery/jquery.justifiedGallery.js"></script>
+
+  <style>
+
+  body {
+    margin: 0;
+  }
+
+  #page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  #header{
+    height: 150px;
+    background-color: pink;
+    width: calc(100% - 10px);
+    margin: 0px 0px 5px 5px;
+    border-top: black;
+    border-top-style: solid;
+    border-top-width: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    #page {
+      left: 5vw;
+      right: 5vw;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    #page {
+      left: 15vw;
+      right: 15vw;
+    }
+  }
+
+
+  </style>
+
+</head>
+<body>
+
+  <div id="page">
+
+    <div id="header">
+
+    </div>
+
+
+    <div id="gallery" >
+      <a href="photos/2016_08_31_Montreal_street_[fomapan]/Jona001.jpg" class="swipebox">
+          <img alt="Title 1" src="photos/2016_08_31_Montreal_street_[fomapan]/Jona001.jpg"/>
+      </a>
+      <a href="photos/2016_08_31_Montreal_street_[fomapan]/Jona002.jpg" class="swipebox">
+          <img alt="Title 2" src="photos/2016_08_31_Montreal_street_[fomapan]/Jona002.jpg"/>
+      </a>
+
+      <a href="photos/2016_08_31_Montreal_street_[fomapan]/Jona003.jpg" class="swipebox">
+          <img alt="Title 2" src="photos/2016_08_31_Montreal_street_[fomapan]/Jona003.jpg"/>
+      </a>
+
+      <a href="photos/2016_08_31_Montreal_street_[fomapan]/Jona004.jpg" class="swipebox">
+          <img alt="Title 2" src="photos/2016_08_31_Montreal_street_[fomapan]/Jona004.jpg"/>
+      </a>
+
+      <a href="photos/2016_08_31_Montreal_street_[fomapan]/Jona005.jpg" class="swipebox">
+          <img alt="Title 2" src="photos/2016_08_31_Montreal_street_[fomapan]/Jona005.jpg"/>
+      </a>
+
+      <a href="photos/2016_08_31_Montreal_street_[fomapan]/Jona006.jpg" class="swipebox">
+          <img alt="Title 2" src="photos/2016_08_31_Montreal_street_[fomapan]/Jona006.jpg"/>
+      </a>
+
+      <a href="photos/2016_08_31_Montreal_street_[fomapan]/Jona007.jpg" class="swipebox">
+          <img alt="Title 2" src="photos/2016_08_31_Montreal_street_[fomapan]/Jona007.jpg"/>
+      </a>
+
+    </div>
+
+
+  </div>
+
+  <script>
+
+  $("#gallery").justifiedGallery({
+    rowHeight: 300,
+    margins: 5
+  }).on('jg.complete', function () {
+    $('.swipebox').swipebox();
+  });
+
+  </script>
+
+</body>
+</html>
