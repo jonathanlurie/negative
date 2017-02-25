@@ -1,0 +1,34 @@
+{
+  "website": {
+    "name": "Film gallery",
+    "author": "Jonathan Lurie",
+    "authorDescription": "Just a guy with a camera",
+    "description": "Some scanned analog films"
+  },
+
+  "social": {
+    "twitter": "jonathanlurie",
+    "instagram": "jonathanlurie"
+  },
+
+  "photoSettings": {
+    "largestSide": 1000,
+    "largestSideThumb": 300
+  },
+
+  "buildSettings": {
+    "dataDir": "./data/",
+    "indexingFilename": "dataIndex.json",
+    "outDir": "./out/",
+    "forceRebuildAllDefault": false
+  },
+
+  "fields": [
+    "name",
+    "description",
+    "date",
+    "author",
+
+  ],
+
+}
