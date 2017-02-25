@@ -1,0 +1,22 @@
+{
+  "name": "negative",
+  "version": "0.1.0",
+  "description": "A static site builder for photographer",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanlurie/negative.git"
+  },
+  "author": "Jonathan Lurie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathanlurie/negative/issues"
+  },
+  "homepage": "https://github.com/jonathanlurie/negative#readme"
+}
